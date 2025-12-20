@@ -1,0 +1,109 @@
+/* ---------- ABOUT PAGE ---------- */
+
+.about-page {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* HERO */
+.about-hero {
+  margin-bottom: 3rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* FOTO */
+.about-photo img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* TEXTO */
+.about-intro h1 {
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+
+.about-intro p {
+  margin-bottom: 1rem;
+  color: #334155;
+}
+
+/* SEÇÕES */
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+/* DESTAQUE */
+.about-highlight {
+  background: #eef2ff;
+  padding: 2rem;
+  border-radius: 14px;
+}
+
+/* LISTA */
+.about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.about-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1e40af;
+  font-weight: bold;
+}
+
+/* CTA */
+.about-cta {
+  text-align: center;
+}
+
+.about-cta h2 {
+  margin-bottom: 0.8rem;
+}
+
+.about-cta p {
+  margin-bottom: 1.5rem;
+  color: #475569;
+}
+
+/* ---------- RESPONSIVO ---------- */
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-photo img {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
