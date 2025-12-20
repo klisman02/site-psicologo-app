@@ -1,26 +1,28 @@
-const track = document.querySelector(".carousel-track");
-const cards = document.querySelectorAll(".carousel-card");
-const nextBtn = document.getElementById("next");
-const prevBtn = document.getElementById("prev");
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".carousel-track");
+  const slides = document.querySelectorAll(".carousel-card");
+  const nextBtn = document.getElementById("next");
+  const prevBtn = document.getElementById("prev");
 
-let index = 0;
+  let index = 0;
 
-function updateCarousel() {
-  track.style.transform = `translateX(-${index * 100}%)`;
-}
+  function updateCarousel() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
 
-nextBtn.addEventListener("click", () => {
-  index = (index + 1) % cards.length;
-  updateCarousel();
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateCarousel();
+  });
+
+  // Auto-play
+  setInterval(() => {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+  }, 6000);
 });
-
-prevBtn.addEventListener("click", () => {
-  index = (index - 1 + cards.length) % cards.length;
-  updateCarousel();
-});
-
-// rotação automática suave
-setInterval(() => {
-  index = (index + 1) % cards.length;
-  updateCarousel();
-}, 7000);

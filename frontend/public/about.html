@@ -18,10 +18,10 @@
         <div class="tagline">Acolhimento, clareza e transformação</div>
       </div>
       <nav class="main-nav">
-        <a href="/index.html">Início</a>
-        <a href="/about.html">Quem sou eu</a>
-        <a href="/contact.html">Entre em contato</a>
-        <a class="btn btn-cta" href="/appointment.html">Agendar</a>
+       <a href="/frontend/public/index.html">Início</a>
+        <a href="/frontend/public/about.html">Quem sou eu</a>
+        <a href="/frontend/public/contact.html">Entre em contato</a>
+        <a class="btn btn-cta" href="/frontend/public/appointment.html">Agendar</a>
       </nav>
     </div>
   </header>
@@ -38,19 +38,27 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Psicologia do Bem — Todos os direitos reservados</p>
-    </div>
+<div class="footer-links">
+  <a href="mailto:seuemail@dominio.com" aria-label="Enviar email">
+    <img src="/imagens/email.jpg" alt="Email">
+  </a>
+
+  <a href="https://www.instagram.com/seuinstagram" target="_blank" aria-label="Instagram">
+    <img src="/imagens/instagram.jpg" alt="Instagram">
+  </a>
+</div>
+
   </footer>
-  <a 
+<a
   href="https://wa.me/5511990189217?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta"
   class="whatsapp-float"
   target="_blank"
   aria-label="Fale conosco no WhatsApp"
 >
-  <!-- <img src="imagens/whatsapp.png" alt="WhatsApp"> -->
-   <p>Me envie uma mensagem</p>
+  <span class="whatsapp-icon"><img src="/imagens/whatsapp.svg" alt="WhatsApp"></span>
+  <span class="whatsapp-text">Fale comigo no WhatsApp</span>
 </a>
-
+</a>
+  <script src="js/menu.js"></script>
 </body>
 </html>
